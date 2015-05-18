@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" 
+    android:layout_height="match_parent" >
+ 	
+    <TextView
+        android:id="@+id/heading_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#58D3F7"
+        android:gravity="center"
+        android:text="Profile View"
+        android:textColor="#FA5882"
+        android:textSize="40dp" />
+
+    <TableRow
+        android:layout_width="10dp"
+        android:layout_height="55dp" >
+
+        <TextView
+            android:id="@+id/member_id"
+            style="@style/Text1"
+            android:layout_below="@id/heading_text"
+            android:layout_marginTop="@dimen/edit_text_margin"
+            android:text="Member Id :" />
+
+        <EditText
+            android:id="@+id/et_member_id"
+            style="@style/E_text1"
+            android:layout_below="@id/heading_text"
+            android:layout_marginLeft="@dimen/edit_text_margin1"
+            android:layout_marginTop="@dimen/edit_text_margin"
+            android:layout_toRightOf="@+id/first_name"
+            android:hint="Member Id" />
+    </TableRow>
+
+    <TableRow style="@style/row1" >
+
+        <TextView
+            android:id="@+id/name"
+            style="@style/Text1"
+            android:layout_below="@id/member_id"
+            android:layout_marginTop="@dimen/edit_text_margin"
+            android:text="Name :" />
+
+        <EditText
+            android:id="@+id/et_name"
+            style="@style/E_text1"
+            android:layout_below="@id/et_member_id"
+            android:layout_marginLeft="@dimen/edit_text_margin1"
+            android:layout_marginTop="@dimen/edit_text_margin"
+            android:layout_toRightOf="@+id/name"
+            android:hint="Name" />
+    </TableRow>
+
+    <TableRow style="@style/row1" >
+
+        <TextView
+            android:id="@+id/DOB"
+            style="@style/Text1"
+            android:layout_below="@id/name"
+            android:layout_marginTop="@dimen/edit_text_margin"
+            android:text="Date Of Birth :" />
+
+        <EditText
+            android:id="@+id/et_Dob"
+            style="@style/E_text1"
+            android:layout_below="@id/et_name"
+            android:layout_marginLeft="@dimen/edit_text_margin1"
+            android:layout_marginTop="@dimen/edit_text_margin"
+            android:layout_toRightOf="@+id/DOB"
+            android:hint="Date of Birth" />
+    </TableRow>
+
+    <TableRow style="@style/row1" >
+
+        <TextView
+            android:id="@+id/due_amount"
+            style="@style/Text1"
+            android:layout_below="@id/DOB"
+            android:layout_marginTop="@dimen/edit_text_margin"
+            android:text="Due Amount :" />
+
+        <EditText
+            android:id="@+id/et_due_amount"
+            style="@style/E_text1"
+            android:layout_below="@id/et_Dob"
+            android:layout_marginLeft="@dimen/edit_text_margin1"
+            android:layout_marginTop="@dimen/edit_text_margin"
+            android:layout_toRightOf="@+id/fatherN"
+            android:hint="Due Amount" />
+    </TableRow>
+
+    <TableRow style="@style/row1" >
+
+        <TextView
+            android:id="@+id/mobile_no"
+            style="@style/Text1"
+            android:layout_below="@id/due_amount"
+            android:layout_marginTop="@dimen/edit_text_margin"
+            android:text="Mobile Number :" />
+
+        <EditText
+            android:id="@+id/et_last_paid_amount"
+            style="@style/E_text1"
+            android:layout_below="@id/et_Dob"
+            android:layout_marginLeft="@dimen/edit_text_margin1"
+            android:layout_marginTop="@dimen/edit_text_margin"
+            android:layout_toRightOf="@+id/fatherN"
+            android:hint="Mobile Number" />
+    </TableRow>
+<TableRow style="@style/row1" >
+
+        <TextView
+            android:id="@+id/email_textview"
+            style="@style/Text1"
+            android:layout_below="@id/et_last_paid_amount"
+            android:layout_marginTop="@dimen/edit_text_margin"
+            android:text="Email Id :" />
+
+        <EditText
+            android:id="@+id/email_edittext"
+            style="@style/E_text1"
+            android:layout_below="@id/et_last_paid_amount"
+            android:layout_marginLeft="@dimen/edit_text_margin1"
+            android:layout_marginTop="@dimen/edit_text_margin"
+            android:layout_toRightOf="@+id/email_textview"
+            android:hint="Email Id" />
+    </TableRow>
+ <RelativeLayout android:layout_margin="5dp"  >
+    <Button 
+        android:id="@+id/Submit_button"
+		android:layout_height="48dp"
+		android:layout_width="110dp"
+		android:layout_marginLeft="350dp"
+        android:text="Submit" android:textColor="#FE2E64" android:textStyle="bold"
+        android:background="@drawable/button_background"
+        />
+    </RelativeLayout>
+
+</TableLayout>

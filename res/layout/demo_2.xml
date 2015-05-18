@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <TextView 
+        android:id="@+id/text_view1"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        />
+	
+
+       <EditText
+           android:id="@+id/editText1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_toRightOf="@id/text_view1"
+           android:layout_marginTop="10dp"
+             android:ems="10"
+           android:inputType="textPassword" />
+<TextView 
+        android:id="@+id/text_view2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/text_view1"
+        android:text="Password"
+        
+        />
+       <EditText
+           android:id="@+id/edit_text2"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/editText1"
+           android:layout_toRightOf="@id/text_view2"
+           android:ems="10" >
+           
+       </EditText>
+
+       <Button
+           android:id="@+id/button1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/editText1"
+           android:layout_centerHorizontal="true"
+           android:layout_marginTop="65dp"
+           android:text="Button" />
+
+</RelativeLayout>

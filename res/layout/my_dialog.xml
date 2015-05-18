@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="220dp"
+    android:layout_height="80dp"
+    android:orientation="vertical"
+    android:background="#2ECCFA"
+     >
+    <TextView 
+        android:id="@+id/tx_dialog1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textColor="#FE2E64"
+        android:text="Are you sure ?"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:background="#2ECCFA"
+         >
+         <Button 
+             android:id="@+id/dialog_yes1"
+             android:layout_width="100dp"
+             android:layout_height="30dp"
+             android:background="@drawable/edittext_stype"
+             android:textColor="#2E2EFE"
+             android:layout_margin="5dp"
+             android:textStyle="bold"
+             android:clickable="true"
+             android:text="Yes"
+             />
+         <Button 
+             android:id="@+id/dialog_no1"
+             android:layout_width="100dp"
+             android:layout_height="30dp"
+             android:background="@drawable/edittext_stype"
+             android:textColor="#2E2EFE"
+             android:clickable="true"
+             android:layout_margin="5dp"
+             android:textStyle="bold"
+             android:text="No"
+             />
+    </LinearLayout>
+
+</LinearLayout>

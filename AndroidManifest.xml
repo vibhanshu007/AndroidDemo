@@ -16,7 +16,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".MyForm"
+            android:name="com.example.demo.MyForm"
             android:label="@string/app_name"
             android:screenOrientation="user" >
             <intent-filter>
@@ -26,12 +26,16 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".TostDemoActivity"
+            android:name="com.example.demo.TostDemoActivity"
             android:label="@string/title_activity_tost_demo" >
         </activity>
         <activity
-            android:name=".Main_Activity"
+            android:name="com.example.demo.Main_Activity"
             android:label="@string/title_activity_my_form" >
+        </activity>
+        <activity
+            android:name="com.example.demo.SecondActivity"
+            android:label="@string/title_activity_second" >
         </activity>
     </application>
 
